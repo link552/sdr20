@@ -1,0 +1,19 @@
+todo.txt
+
+Security:
+On host, enter password. When joining, enter password. Match joining password to host password. If passwords don't match, notify client of the mismatch. After 3 mismatched passwords, ignore packets from client. On server restart, ignored ip address list is cleared. On password match, ignore all packets from other ip address.
+
+Example communication:
+Client: Hello!
+Server: Hello. What's the password?
+Client: *****
+Server: Incorrect password. Please try again.
+Client: *******
+Server: Welcome!
+*stuff*
+Client: Goodbye!
+Server: Goodbye.
+
+Encryption:
+java.security
+java.crypto
