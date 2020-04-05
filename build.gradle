@@ -36,3 +36,9 @@ application {
 run {
     standardInput = System.in
 }
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'sdr20.App'
+    }
+}

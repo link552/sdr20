@@ -5,8 +5,7 @@ import java.net.*;
 
 class Client {
 
-    public void run() {
-        String hostname = "localhost";
+    public void run(String hostname) {
         int port = 8080;
 
         InetAddress address;
